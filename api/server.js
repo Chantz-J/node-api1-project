@@ -2,11 +2,11 @@
 const express = require('express')
 const server = express()
 
+server.use(express.json())
+
 server.get('/', (req, res) => {
-    res.send('Hello from Express')
+    res.send('Hello from Express ^_^')
 })
 
-server.listen(5000, () => 
-    console.log('Server running on http://localhost:5000')
-)
-module.exports = {server}; // EXPORT YOUR SERVER instead of {}
+
+module.exports = {server} // EXPORT YOUR SERVER instead of {}
